@@ -1,0 +1,27 @@
+h1. Project Launcher
+
+h2. About
+
+A simple, small ruby script to launch commands on a single multi-tabbed OSX Terminal. Project configuration is set in projects.yml, where detection (based on folder precedence) and terminal commands can be setup.  See below for information on installation/usage and setting up. For anything else check the latest commit logs.
+
+h2. Caveats
+
+* tests? there are no tests
+* this script is provided without warranty, support, or a call center, you broke it, you fix it
+
+h2. Install
+
+soon info will be here .. very soon
+
+h2. Configuration / Using
+
+soon info will be here .. very soon
+
+h2. Requirements
+
+* "Ruby":http://www.ruby-lang.org/ >= 1.8.6
+* "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
+
+h2. Credits
+
+Inspired by "Solomon White":http://onrails.org/articles/2007/11/28/scripting-the-leopard-terminal
