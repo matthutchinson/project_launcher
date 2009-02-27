@@ -2,7 +2,7 @@ h1. Project Launcher
 
 h2. About
 
-A simple, small Ruby script to launch commands on a single multi-tabbed OSX Terminal (using Appscript).  Project configuration is set in launcher_config.yml, where detection (based on a directory name, what folders it contains) and terminal commands can be setup.  The example configuration shows a Rails and Erlang project type.  See below for info on using and configuring.  For anything else check the latest commit logs.
+A simple, small Ruby script to launch commands on the standard multi-tabbed OSX Terminal (using "Appscript":http://appscript.sourceforge.net/).  Project configuration is set in launcher_config.yml, where detection (based on a directory name, what folders it contains) and terminal commands can be setup.  The example configuration shows a Rails and Erlang project type.  See below for info on using and configuring.  For anything else check the latest commit logs.
 
 h2. Caveats
 
@@ -13,7 +13,17 @@ Ongoing issues with this project include;
 * Screencast? maybe if the budget allows it, and Ridley Scott will direct it.
 
 
-h2. Installing / Running
+h2. Setup / Using
+
+h3. Requirements
+
+What do you need?
+
+* "OSX":http://www.apple.com/macosx/ (preferably Leopard)
+* "Ruby":http://www.ruby-lang.org/ >= 1.8.6
+* "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
+
+h3. Installing
 
 "Download the project":http://github.com/hiddenloop/project_launcher/tarball/master, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
 
@@ -45,13 +55,16 @@ Projects types are configured with *three things*;
 * detection - list of folders the project must contain (all of them), in order to match the project type
 * tasks     - the actual command to run in the terminal, and a label (for the terminal window) - multiple tasks spawn tabs in a single terminal
 
-h2. Requirements
+h2. Example Configuration Explanation (a Rails project)
 
-What do you need?
+The example config shows detection of a Rail project (based on presence of app, db, public, vendor folders).  And the following tasks in Terminal tabs;
 
-* "OSX":http://www.apple.com/macosx/ (preferably Leopard)
-* "Ruby":http://www.ruby-lang.org/ >= 1.8.6
-* "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
+* rake spec is ran, and then autotest
+* the development log cleared and tailed
+* textmate is launched with Rails folders, and mongrel server started
+* Git info is shown
+* MySQL launches into development database (based on project_name_development)
+* Terminal launches some notification messages, and sits open in project folder
 
 h2. Get out clause
 
