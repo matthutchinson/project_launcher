@@ -2,7 +2,7 @@ h1. Project Launcher
 
 h2. About
 
-A simple, small ruby script to launch commands on a single multi-tabbed OSX Terminal. Project configuration is set in launcher_config.yml, where detection (based on a directory name, what folders it contains) and terminal commands can be setup.  The example configuration shows a Rails and Erlang project type.  See below for info on using and configuring.  For anything else check the latest commit logs.
+A simple, small Ruby script to launch commands on a single multi-tabbed OSX Terminal (using Appscript).  Project configuration is set in launcher_config.yml, where detection (based on a directory name, what folders it contains) and terminal commands can be setup.  The example configuration shows a Rails and Erlang project type.  See below for info on using and configuring.  For anything else check the latest commit logs.
 
 h2. Caveats
 
