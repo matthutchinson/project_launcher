@@ -2,22 +2,22 @@ h1. Project Launcher
 
 h2. About
 
-A simple, small ruby script to launch commands on a single multi-tabbed OSX Terminal. Project configuration is set in launcher_config.yml, where detection (based on folder precedence) and terminal commands can be setup.  See below for information on installation, using and configuring.  For anything else check the latest commit logs.
+A simple, small ruby script to launch commands on a single multi-tabbed OSX Terminal. Project configuration is set in launcher_config.yml, where detection (based on a directory name, what folders it contains) and terminal commands can be setup.  The example configuration shows a Rails and Erlang project type.  See below for info on using and configuring.  For anything else check the latest commit logs.
 
 h2. Caveats
 
 Ongoing issues with this project include;
 
-* Screencast? maybe if my budget allows it, and Ridley Scott directs it.
 * If you run into trouble installing the Appscript gem (rb-appscript) - try "building it from source":http://appscript.sourceforge.net/rb-appscript/install.html
-* There are no tests (yet)
+* Tests? There are no tests
+* Screencast? maybe if the budget allows it, and Ridley Scott will direct it.
 
 
 h2. Installing / Running
 
-Download the project, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
+"Download the project":http://github.com/hiddenloop/project_launcher/tarball/master, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
 
-* ruby ./project_launcher.rb _project_name_
+bq. ruby ./project_launcher.rb _project_name_
 
 Where _project_name_ is the project to search for in the projects folder (set in the config).  To make use of the launcher to launch in your current working directory, set up an alias in your ~/.bash_login file e.g.
 
