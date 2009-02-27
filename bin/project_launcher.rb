@@ -23,7 +23,7 @@ include Appscript
 class ProjectLauncher
   
   @@terminal        = app('Terminal')
-  @@config          = YAML::load(File.open( File.join(File.dirname(__FILE__), 'config.yml') ))
+  @@config          = YAML::load(File.open( File.join(File.dirname(__FILE__), 'launcher_config.yml') ))
   @@projects_folder = @@config.delete('projects_folder')
   @@search_depth    = @@config.delete('search_depth')
   @@default_profile = @@config.delete('default')
