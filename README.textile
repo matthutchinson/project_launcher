@@ -9,6 +9,7 @@ h2. Caveats
 Ongoing issues with this project include;
 
 * If you run into trouble installing the Appscript gem (rb-appscript) - try "building it from source":http://appscript.sourceforge.net/rb-appscript/install.html
+* Depending on the performance of your machine, you may have to let all command tabs open before interacting with the Terminal window (otherwise Appscript gets confused on focus)
 * Tests? There are no tests
 * Screencast? maybe if the budget allows it, and Ridley Scott will direct it.
 
