@@ -53,10 +53,11 @@ What do you need?
 * "Ruby":http://www.ruby-lang.org/ >= 1.8.6
 * "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
 
-h3. Get out clause
+h2. Get out clause
 
 This script is provided without warranty, support, or a call center in some far away land. If using this script causes the world to stop rotating, and you get transported _back_ to the Island, it's your own fault.
 
-h3. Credits
+h2. Credits
 
+Authored by "Matthew Hutchinson":http://matthewhutchinson.net
 Inspired by "Solomon White's topic on scripting the leopard terminal":http://onrails.org/articles/2007/11/28/scripting-the-leopard-terminal and adapted 
