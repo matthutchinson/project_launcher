@@ -8,6 +8,7 @@ h2. Caveats
 
 Ongoing issues with the project launcher include;
 
+* Screencast? maybe if my budget allows it, and Ridley Scott directs it.
 * If you run into trouble installing the Appscript gem (rb-appscript) - try "building it from source":http://appscript.sourceforge.net/rb-appscript/install.html
 * There are no tests (yet)
 
@@ -36,16 +37,19 @@ The main config file ("YAML":http://en.wikipedia.org/wiki/YAML) is located along
 
 * projects_folder - full path to the folder to search in when you pass a _project_name_
 * search_depth    - distance of tree to search in for a matching _project_name_
-* projects        - "YAML":http://en.wikipedia.org/wiki/YAML definition of multiple projects, see below for explanation
+* project types   - "YAML":http://en.wikipedia.org/wiki/YAML definition of multiple project types, see below for explanation
 
 Projects types are configured with 3 things;
 
-* name - (default is the name given when no detection is matched for a project)
+* name      - (default is the name given when no detection is matched for a project)
 * detection - list of folders the project must contain (all of them), in order to match the project type
-* tasks - the actual command to run in the terminal, and a label (for the terminal window) - multiple tasks spawn tabs in a single terminal
+* tasks     - the actual command to run in the terminal, and a label (for the terminal window) - multiple tasks spawn tabs in a single terminal
 
 h2. Requirements
 
+What do you need?
+
+* OSX (preferably Leopard)
 * "Ruby":http://www.ruby-lang.org/ >= 1.8.6
 * "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
 
