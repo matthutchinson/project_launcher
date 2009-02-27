@@ -21,12 +21,12 @@ h2. Installing / Running
 
 Where _project_name_ is the project to search for in the projects folder (set in the config).  To make use of the launcher to launch in your current working directory, set up an alias in your ~/.bash_login file e.g.
 
-* alias launch_me='ruby /full/path/to/project_launcher.rb'
+<pre>alias launch_me='ruby /full/path/to/project_launcher.rb'</pre>
 
 Then (from anywhere) you can simply type;
 
-* launch_me (runs launcher with current working dir as the project)
-* launch_me _project_name_
+<pre>launch_me (runs launcher with current working dir as the project)
+launch_me _project_name_</pre>
 
 (don't forget to re-source your bash_login before trying this. Type;  . ~/.bash_login)
 
@@ -39,9 +39,9 @@ The main config file ("YAML":http://en.wikipedia.org/wiki/YAML) is located along
 * search_depth    - distance of tree to search in for a matching _project_name_
 * project types   - "YAML":http://en.wikipedia.org/wiki/YAML definition of multiple project types, see below for explanation
 
-Projects types are configured with 3 things;
+Projects types are configured with *three things*;
 
-* name      - (default is the name given when no detection is matched for a project)
+* name      - defined as the YAML block name (default is the name given when no detection is matched for a project)
 * detection - list of folders the project must contain (all of them), in order to match the project type
 * tasks     - the actual command to run in the terminal, and a label (for the terminal window) - multiple tasks spawn tabs in a single terminal
 
@@ -49,7 +49,7 @@ h2. Requirements
 
 What do you need?
 
-* OSX (preferably Leopard)
+* "OSX":http://www.apple.com/macosx/ (preferably Leopard)
 * "Ruby":http://www.ruby-lang.org/ >= 1.8.6
 * "rb-appscript":http://appscript.sourceforge.net/rb-appscript/ (gem) >= 0.5.1
 
