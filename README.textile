@@ -59,5 +59,7 @@ This script is provided without warranty, support, or a call center in some far 
 
 h2. Credits
 
-Authored by "Matthew Hutchinson":http://matthewhutchinson.net
-Inspired by "Solomon White's topic on scripting the leopard terminal":http://onrails.org/articles/2007/11/28/scripting-the-leopard-terminal and adapted 
+Who's who?
+
+* Authored by "Matthew Hutchinson":http://matthewhutchinson.net
+* Inspired by "Solomon White's topic on scripting the leopard terminal":http://onrails.org/articles/2007/11/28/scripting-the-leopard-terminal and adapted 
