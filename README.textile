@@ -17,7 +17,7 @@ h2. Installing / Running
 
 "Download the project":http://github.com/hiddenloop/project_launcher/tarball/master, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
 
-bq. ruby ./project_launcher.rb _project_name_
+<pre>ruby ./project_launcher.rb _project_name_</pre>
 
 Where _project_name_ is the project to search for in the projects folder (set in the config).  To make use of the launcher to launch in your current working directory, set up an alias in your ~/.bash_login file e.g.
 
