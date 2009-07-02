@@ -83,34 +83,36 @@ class ProjectLauncher
   def detect_project_type
     folders, files = Dir["#{@project_folder}/*"].map{|f| File.basename(f) }.partition{|f| FileTest.directory?("#{@project_folder}/#{f}") }
     @profile = @@config['projects'].find do |name, config|
-      if name == "default"
-        true
-      else
+      if config['detection']
         case config['detection']
-        when nil, "true"
-          true
-        when Hash
-          ((! config['detection'].has_key? 'folders') ||
-          config['detection']['folders'].all? {|f| folders.include?(f) }) &&
-          ((! config['detection'].has_key? 'files') ||
-          config['detection']['files'].all? {|f| files.include?(f) })
+          when nil, "true"
+            true
+          when Hash
+            ((! config['detection'].has_key? 'folders') ||
+            config['detection']['folders'].all? {|f| folders.include?(f) }) &&
+            ((! config['detection'].has_key? 'files') ||
+            config['detection']['files'].all? {|f| files.include?(f) })
         end
       end
     end
-
+  
     if @profile
       @profile = @profile[1]
     else
-      @profile = @@default_profile
+      puts "in here"
+      @profile = @@config['projects'].find do |name, config|
+        true if name == 'default'          
+      end
+      @profile = @profile[1]
     end
 
     unless @profile
-      puts "Launch Robot: Sorry, I could not find a matching profile for that project"
+      puts "Launch Robot: Sorry, I could not find a matching profile for that project and no default set up"
       exit
     end
 
     # changed to be silent on success
-    puts "Launch Robot: Launching in #{@project_folder} ..."
+    puts "Launch Robot: Launching #{@project_folder}..."
   end
 
   def launch

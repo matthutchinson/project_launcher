@@ -10,17 +10,15 @@ projects:
         - vendor
     tasks:
       - label: Auto Testing
-        command: rake spec; autotest
-      - label: Tail Development Log
-        command: rake log:clear; tail -f log/development.log
-      - label: Mongrel Server
-        command: mate app config lib db public spec test vendor/plugins; mongrel_rails start   
-      - label: GiT 
-        command: git remote show origin;git branch -a;git status
+        command: autotest
       - label: MySQL
         command: mysql {project_name}_development
+      - label: GiT 
+        command: git remote show origin;git branch -a;git status;
       - label: Terminal
-        command: growlnotify -m "It's kicked off and ready to go" {project_name}; say "{project_name} kicked off! (y'all have some fun)"
+        command: growlnotify -m "It's kicked off and ready to go" {project_name}; say "{project_name} kicked off! (y'all have some fun);"
+      - label: Restart Phusion
+        command: touch tmp/restart.txt;mate README.textile app config lib db public spec test vendor/plugins
   erlang:
     detection:
       folders:
@@ -34,4 +32,4 @@ projects:
   default:
     tasks:
       - label: HAL9000
-        command: growlnotify -m "just what do you think you're doing dave?"; say "Nothing kicked off! - I will sing a song instead, Daisy Daisy, Give me your answer do. I'm half crazy, All for the love of you."
+        command: growlnotify -m "just what do you think you're doing dave?"; say "Nothing kicked off! - I will sing a song instead"; osascript -e 'say "oh This is a silly song silly song silly song this is the silliest song ive ever ever heard So why keep you listening listening listening while you are supposed to work to work to work to work" using "cellos"'
