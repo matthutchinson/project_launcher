@@ -26,7 +26,7 @@ What do you need?
 
 h3. Installing
 
-"Download the project":http://github.com/hiddenloop/project_launcher/tarball/master, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
+"Download the project":http://github.com/matthutchinson/project_launcher/tarball/master, and place the contents of the bin/ folder into a searchable bin path.  After configuring launcher_config.yml (see below), you can start launching projects using the following command;
 
 <pre>ruby ./project_launcher.rb _project_name_</pre>
 
@@ -82,4 +82,4 @@ h2. Creative Commons License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/2.0/uk/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.0/uk/80x15.png" /></a>
 
-<span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Project Launcher</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/hiddenloop/project_launcher" property="cc:attributionName" rel="cc:attributionURL">Matthew Hutchinson</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/uk/">Creative Commons Attribution 2.0 UK: England &amp; Wales License</a>.
+<span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Project Launcher</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/matthutchinson/project_launcher" property="cc:attributionName" rel="cc:attributionURL">Matthew Hutchinson</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/uk/">Creative Commons Attribution 2.0 UK: England &amp; Wales License</a>.
